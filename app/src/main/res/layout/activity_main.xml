@@ -41,6 +41,7 @@
         android:id="@+id/cmdSumar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="Calculate"
         android:text="@string/sumar" />
 
     <TextView
