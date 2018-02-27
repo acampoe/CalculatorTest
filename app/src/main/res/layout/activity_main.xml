@@ -37,16 +37,31 @@
         android:hint="@string/numbertwo"
         android:inputType="number" />
 
-    <Button
-        android:id="@+id/cmdSumar"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="Calculate"
-        android:text="@string/sumar" />
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cmdSumar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="Calculate"
+            android:text="@string/sumar" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="Clear"
+            android:text="@string/Limpiar" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/lblResult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
 </LinearLayout>
 
